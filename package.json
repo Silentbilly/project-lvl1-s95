@@ -1,8 +1,8 @@
 {
   "name": "brain-games-bill",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
-  "main": "index.js",
+  "main": "brain-games.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
