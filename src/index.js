@@ -10,21 +10,21 @@ const greeting = 'Welcome to the Brain Games!';
 const runGame = (description) => {
   console.log(greeting);
   console.log(description);
-  };
+};
 
 export const runBrainGames = () => {
   const description = '';
   runGame(description);
   const name = makeQuestion('May I have your name?');
   console.log(`Hello, ${name}!`);
-  };
+};
 
 export const runEven = () => {
   const description = 'Answer "yes" if number even otherwise answer "no".\n';
   runGame(description);
   const name = makeQuestion('May I have your name?');
   console.log(`Hello, ${name}!`);
-  for (let i = 0; i < itercount; i +=1 ) {
+  for (let i = 0; i < itercount; i += 1) {
     const question = getRandomInt(0, 100);
     console.log(`Question: ${question}`);
     const answer = makeQuestion('Your answer:');
