@@ -5,7 +5,7 @@ start:
 	npm run babel-node -- src/bin/brain-games.js
 
 publish:
-	sudo npm publish
+	npm publish
 
 lint:
 	npm run eslint -- src
