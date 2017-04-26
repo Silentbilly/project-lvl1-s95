@@ -1,11 +1,12 @@
 {
   "name": "brain-games-bill",
-  "version": "0.4.1",
+  "version": "0.5.1",
   "description": "",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,6 +36,7 @@
     "babel-eslint": "*"
   },
   "dependencies": {
+    "hexlet-pairs": "^0.1.4",
     "readline-sync": "*"
   }
 }
