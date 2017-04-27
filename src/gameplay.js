@@ -7,7 +7,7 @@ console.log('Welcome to the Brain Games!');
 export default (description, game) => {
   console.log(description);
   const name = makeQuestion('May I have your Name?');
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!\n`);
   for (let i = 0; i < 3; i += 1) {
     const expectedWithQuestion = game();
     const expected = car(expectedWithQuestion);
