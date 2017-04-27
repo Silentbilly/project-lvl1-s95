@@ -2,6 +2,7 @@ import { car, cdr } from 'hexlet-pairs';
 import readlineSync from 'readline-sync';
 
 const makeQuestion = question => readlineSync.question(`${question} `);
+
 console.log('Welcome to the Brain Games!');
 
 export default (description, game) => {
