@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import runGkd from '../games/b-gkd';
+import runGkd from '../games/gkd';
 
 runGkd();

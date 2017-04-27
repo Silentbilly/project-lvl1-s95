@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npm run babel-node -- src/bin/brain-gkd.js
+	npm run babel-node -- src/bin/brain-even.js
 
 publish:
 	npm publish

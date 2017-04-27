@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import { getRandomInt } from '../common';
+import getRandomInt from '../common';
 import runGame from '../gameplay';
 
 const description = 'What is the result of the expression?\n';
