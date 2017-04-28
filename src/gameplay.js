@@ -5,11 +5,13 @@ const makeQuestion = question => readlineSync.question(`${question} `);
 
 console.log('Welcome to the Brain Games!');
 
+const questionCount = 3;
+
 export default (description, game) => {
   console.log(description);
   const name = makeQuestion('May I have your Name?');
   console.log(`Hello, ${name}!\n`);
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < questionCount; i += 1) {
     const expectedWithQuestion = game();
     const expected = car(expectedWithQuestion);
     const question = cdr(expectedWithQuestion);
