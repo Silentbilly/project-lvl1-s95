@@ -23,7 +23,7 @@ const arrayToString = arr => arr.join('');
 //  преобразование массива в строку
 
 const minNumberLength = 3;
-const maxNumberLength = 4;
+const maxNumberLength = 5;
 //  минимальная и максимальная длина числа
 
 const arrayFillRandom = () => {
