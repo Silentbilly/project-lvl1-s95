@@ -34,7 +34,7 @@ const arrayFillRandom = () => {
   }
   return arr;
 };
-//  создание массива, заполненного случайными числами
+//  создание массива, заполненного случайными числами от 0 до 9
 
 const game = () => {
   const num = arrayFillRandom();
