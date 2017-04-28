@@ -21,7 +21,7 @@ const calculateRand = (num1, num2, operator) => {
       break;
     default:
   }
-  return cons(String(expected), `${num1} ${operator} ${num2}`);
+  return cons(`${num1} ${operator} ${num2}`, String(expected));
 };
 
 const game = () => {

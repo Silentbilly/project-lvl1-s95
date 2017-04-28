@@ -14,7 +14,7 @@ const getGkd = (num1, num2) => {
 const game = () => {
   const num1 = getRandomInt(0, 100);
   const num2 = getRandomInt(0, 100);
-  return cons(String(getGkd(num1, num2)), `${num1} ${num2}`);
+  return cons(`${num1} ${num2}`, String(getGkd(num1, num2)));
 };
 
 export default () => {
