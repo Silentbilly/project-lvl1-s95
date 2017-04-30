@@ -19,9 +19,6 @@ const arrayBalance = (arr) => {
 };
 //  балансировочная функция
 
-const arrayToString = arr => arr.join('');
-//  преобразование массива в строку
-
 const minNumberLength = 3;
 const maxNumberLength = 5;
 //  минимальная и максимальная длина числа
@@ -38,7 +35,7 @@ const arrayFillRandom = () => {
 
 const game = () => {
   const num = arrayFillRandom();
-  return cons(`${arrayToString(num)}`, arrayToString(arrayBalance(num)));
+  return cons(`${num.join('')}`, arrayBalance(num).join(''));
 };
 
 export default () => {
