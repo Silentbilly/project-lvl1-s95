@@ -5,24 +5,22 @@ import runGame from '../gameplay';
 const description = 'Is prime the integer?\n';
 
 const game = () => {
-  let num = 11; // пытаюсь выполнить тест Люка-Лемера. Не получается например с числом 11..
+  const num = getRandomInt(0, 100);
 
-  const isPrime = () => {
-    if (num <= 1) {
-      return 'no';
+  const prime = () => {
+    if (num < 2) {
+      return false;
     }
-    if ((num % 2 === 0) && num !== 2) {
-      return 'no';
-    } else {
-      let s = 4;
-      let m = Math.pow(2, num) - 1;
-      for (let i = 1; i < num - 1; i += 1) {
-        s = (s * s - 2) % m;
-        console.log(s)
+
+    for (let i = 2; i < num; i += 1) {
+      if (num % i === 0) {
+        return false;
       }
-      return (s === 0) ? 'yes' : 'no';
     }
+    return true;
   };
+
+  const isPrime = () => (prime(num) ? 'yes' : 'no');
 
   return cons(num, isPrime(num));
 };
