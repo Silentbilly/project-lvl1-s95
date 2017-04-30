@@ -6,7 +6,6 @@ const description = 'Is prime the integer?\n';
 
 const game = () => {
   const num = getRandomInt(0, 100);
-
   const prime = () => {
     if (num < 2) {
       return false;
