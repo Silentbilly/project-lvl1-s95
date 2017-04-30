@@ -22,7 +22,7 @@ const progression = () => {
     return newArr;
   };
   const array = arrayWihoutElement();
-  const stepOfExpectedMissingValue = (array[missingIndex + 1] - array[missingIndex - 1]) / 2;
+  const stepOfExpectedMissingValue = array[1] - array[0];
   const expectedMissingValue = array[missingIndex - 1] + stepOfExpectedMissingValue;
   return cons(array.join(' '), `${expectedMissingValue}`);
 };
