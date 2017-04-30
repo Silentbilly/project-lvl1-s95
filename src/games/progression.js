@@ -4,7 +4,7 @@ import runGame from '../gameplay';
 
 const description = 'What number is missing in this progression?\n';
 
-const progression = () => {
+const game = () => {
   const missingIndex = 5;
   const limit = 9;
   const step = getRandomInt(1, 9);
@@ -26,8 +26,6 @@ const progression = () => {
   const expectedMissingValue = array[missingIndex - 1] + getStepOfProgression;
   return cons(array.join(' '), `${expectedMissingValue}`);
 };
-
-const game = () => progression();
 
 export default () => {
   runGame(description, game);
