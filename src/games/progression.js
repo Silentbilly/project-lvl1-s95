@@ -22,8 +22,8 @@ const progression = () => {
     return newArr;
   };
   const array = arrayWihoutElement();
-  const stepOfExpectedMissingValue = array[1] - array[0];
-  const expectedMissingValue = array[missingIndex - 1] + stepOfExpectedMissingValue;
+  const getStepOfProgression = array[1] - array[0];
+  const expectedMissingValue = array[missingIndex - 1] + getStepOfProgression;
   return cons(array.join(' '), `${expectedMissingValue}`);
 };
 
