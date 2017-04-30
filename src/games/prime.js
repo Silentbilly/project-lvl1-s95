@@ -7,7 +7,7 @@ const description = 'Is prime the integer?\n';
 const game = () => {
   const num = getRandomInt(0, 100);
 
-  const prime = () => {
+  const isPrime = () => {
     if (num === 2) return true;
     else if (num <= 1 || num % 2 === 0) return false;
     for (let i = 3; i <= Math.sqrt(num); i += 2) {
@@ -15,9 +15,8 @@ const game = () => {
     }
     return true;
   };
-  const isPrime = () => (prime(num) ? 'yes' : 'no');
 
-  return cons(num, isPrime(num));
+  return cons(num, isPrime(num) ? 'yes' : 'no');
 };
 
 export default () => {
