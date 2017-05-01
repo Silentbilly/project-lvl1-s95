@@ -8,6 +8,7 @@ const game = () => {
   const missingIndex = 5;
   const limit = 9;
   const step = getRandomInt(1, 9);
+  
   const arrayFillProgression = () => {
     const arr = [];
     arr[0] = getRandomInt(0, 9);
@@ -16,14 +17,17 @@ const game = () => {
     }
     return arr;
   };
+  
   const arrayWihoutElement = () => {
     const newArr = arrayFillProgression();
     newArr.splice(missingIndex, 1, '..');
     return newArr;
   };
+  
   const array = arrayWihoutElement();
   const getStepOfProgression = array[1] - array[0];
   const expectedMissingValue = array[missingIndex - 1] + getStepOfProgression;
+  
   return cons(array.join(' '), `${expectedMissingValue}`);
 };
 
