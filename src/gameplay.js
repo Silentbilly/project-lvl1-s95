@@ -7,7 +7,7 @@ const questionCount = 3;
 
 export default (description, game) => {
   console.log(`${description}\n`);
-  const name = readlineSync.question('May I have your Name?');
+  const name = readlineSync.question('May I have your Name? ');
   console.log(`Hello, ${name}!\n`);
   for (let i = 0; i < questionCount; i += 1) {
     const expectedWithQuestion = game();
