@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import getRandomInt from '../common';
 import runGame from '../gameplay';
 
-const description = 'Find the greatest common divisor of given numbers.\n';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getGkd = (num1, num2) => {
   if (num2 === 0) {
