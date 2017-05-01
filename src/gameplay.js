@@ -14,7 +14,7 @@ export default (description, game) => {
     const question = car(expectedWithQuestion);
     const expected = cdr(expectedWithQuestion);
     console.log(`Question: ${question}`);
-    const answer = readlineSync.question('Your answer:');
+    const answer = readlineSync.question('Your answer: ');
     if (expected === answer) {
       console.log('Correct!');
     } else {
