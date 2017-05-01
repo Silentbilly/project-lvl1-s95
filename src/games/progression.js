@@ -4,10 +4,10 @@ import runGame from '../gameplay';
 
 const description = 'What number is missing in this progression?';
 const limit = 9;
-const step = getRandomInt(1, 9);
 const missingIndex = 5;
 
 const arrayFillProgression = () => {
+  const step = getRandomInt(1, 9);
   const arr = [];
   arr[0] = getRandomInt(0, 9);
   for (let i = 0; i < limit; i += 1) {
