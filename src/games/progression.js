@@ -5,6 +5,7 @@ import runGame from '../gameplay';
 const description = 'What number is missing in this progression?';
 const limit = 9;
 const step = getRandomInt(1, 9);
+const missingIndex = 5;
 
 const arrayFillProgression = () => {
   const arr = [];
@@ -14,7 +15,7 @@ const arrayFillProgression = () => {
   }
   return arr;
 };
-  
+
 const arrayWihoutElement = () => {
   const newArr = arrayFillProgression();
   newArr.splice(missingIndex, 1, '..');
@@ -22,7 +23,6 @@ const arrayWihoutElement = () => {
 };
 
 const game = () => {
-  const missingIndex = 5;
   const array = arrayWihoutElement();
   const getStepOfProgression = array[1] - array[0];
   const expectedMissingValue = array[missingIndex - 1] + getStepOfProgression;
