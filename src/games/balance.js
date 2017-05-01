@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import getRandomInt from '../common';
 import runGame from '../gameplay';
 
-const description = 'Balance the given number.\n';
+const description = 'Balance the given number.';
 
 const arrayBalance = (arr) => {
   const maxArrayValue = Math.max.apply(null, arr);
