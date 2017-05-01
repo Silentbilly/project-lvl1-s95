@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import getRandomInt from '../common';
 import runGame from '../gameplay';
 
-const description = 'What is the result of the expression?\n';
+const description = 'What is the result of the expression?';
 
 const arr = ['+', '-', '*'];
 const getRandomOperator = () => arr[Math.floor(Math.random() * 3)];
